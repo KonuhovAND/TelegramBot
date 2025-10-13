@@ -1,1 +1,1 @@
-_token = "*************************"
+_token = "This is not a token"

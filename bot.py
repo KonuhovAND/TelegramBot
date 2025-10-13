@@ -38,7 +38,7 @@ class tg_bot:
     async def show_log(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         strings = ""
         try:
-            with open("./logger/logger.txt") as file:
+            with open("logger/logger.txt") as file:
                 c = 0
                 for line in file:
                     strings += line

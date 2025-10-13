@@ -14,6 +14,7 @@ class JsonFormatter(logging.Formatter):
 log = logging.getLogger("logger_bot")
 log.setLevel(logging.INFO)
 
-fh = logging.FileHandler(filename="logger.txt", mode="a", encoding="utf-8")
+#fh = logging.FileHandler(filename="./logger/logger.txt", mode="a", encoding="utf-8")
+fh = logging.FileHandler(filename="logger/logger.txt", mode="a", encoding="utf-8")
 fh.setFormatter(JsonFormatter())
 log.addHandler(fh)
