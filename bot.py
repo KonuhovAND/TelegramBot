@@ -1,8 +1,8 @@
 import asyncio
 import sqlite3
-from jsonhandler import log
-from not_a_token import _token
-from sm import dev_profile, scenario
+from tools.jsonhandler import log
+from keys.not_a_token import _token
+from text_data.sm import dev_profile, scenario
 from telegram import Update
 from telegram.ext import (
     Application,
@@ -38,7 +38,7 @@ class tg_bot:
     async def show_log(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         strings = ""
         try:
-            with open("./logger.txt") as file:
+            with open("./logger/logger.txt") as file:
                 c = 0
                 for line in file:
                     strings += line
