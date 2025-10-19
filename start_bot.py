@@ -1,6 +1,6 @@
 from tools.bot import *
 from keys.tools.ask_your_token import ask_your_token
-from keys._token import _token
+from keys.token import _token
 import asyncio
 
 ask_your_token()
