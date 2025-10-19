@@ -1,7 +1,6 @@
 import asyncio
 import sqlite3
 from tools.jsonhandler import log
-from keys.not_a_token import _token
 from text_data.sm import dev_profile, scenario
 from telegram import Update
 from telegram.ext import (
