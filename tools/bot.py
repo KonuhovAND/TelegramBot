@@ -96,5 +96,4 @@ class tg_bot:
             log.error(exc)
 
 
-first_et = tg_bot(token_bot=_token)
-asyncio.run(first_et.run())
+
